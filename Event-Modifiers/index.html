@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Study</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div id="app">
+    <h2 v-on:mouseover="onHover">{{ title }}: {{ counter }}</h2>
+    <button v-on:click.once="addCounter(5, 'Изменено на 5', $event)">+5</button>
+    <button @click="addCounter(10, 'Изменено на 10', $event)">+10</button>
+    <hr>
+    <h2><a href="http://google.com" target="_blank"
+        @click.prevent
+        >Google</a></h2>
+
+        
+</div>    
+
+
+
+
+<script src="js/vue.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>  

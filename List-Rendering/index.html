@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Study</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div id="app">
+
+
+<ul>
+    <li v-for="(student, index) in students">
+        {{ index + 1 }}. {{ student.name }} - <b>{{ student.age }}</b></li>
+</ul>
+
+<hr>
+
+<span v-for="n in 10">{{ n }}</span>
+
+<hr>
+<ul>
+<li v-for="(value, key, index) in  person"><em>{{ index +1 }}) </em><b>{{ key }} - </b>{{ value }}</li>
+</ul>
+</div>    
+
+<script src="js/vue.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>   

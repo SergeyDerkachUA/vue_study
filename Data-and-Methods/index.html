@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Study</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div id="app">
+    <h1>String: {{ message }}</h1>
+    <h1>Sum: {{ 1 + 3 }}</h1>
+    <input type="text" v-model="message">
+    <pre>{{ $data | json }}</pre>
+    <div class="student">
+        <h1>{{ sayHello() }}</h1>
+        <h1>Age: {{ age }}</h1>
+        <h1>If Statement: {{ isStudent ? 'I am Valera' : 'I am not a Valera' }}</h1>
+        <h1>Functions {{ string.split('').reverse().join('') }}</h1>
+    </div>
+</div>    
+
+<script src="js/vue.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

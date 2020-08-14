@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Study</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div id="app">
+    <h2 v-if="isVisible">Visible</h2>
+    <h2 v-else>Not Visible</h2>
+
+    <button @click="isVisible = !isVisible">Toogle</button>
+
+
+    <hr>
+
+    <h2 v-if="char === 'a'">A</h2>
+    <h2 v-else-if="char === 'b'" >B</h2>
+    <h2 v-else-if="char === 'c'">C</h2>
+    <h2 v-else>Not Match</h2>
+
+
+    <input type="text" v-model="char">
+
+    <hr>
+
+    <template v-if="isVisible"> 
+    <h2>I am title</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, necessitatibus?</p>
+    </template>  
+
+    <template v-else>
+    <h2 style="color:red;">I am title</h2>
+    <p style="color:red;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, necessitatibus?</p>
+    </template>  
+</div>    
+
+
+
+
+<script src="js/vue.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>  
