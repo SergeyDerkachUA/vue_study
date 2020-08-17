@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Study</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div id="app">
+
+    <button v-bind:class="getCss" :style="styles">{{ title }}</button>
+
+    <ul>
+        <li>
+            <input type="checkbox" v-model="fontSize">
+            <label for="">Font Size</label>
+        </li>
+        <li>
+            <input type="checkbox" v-model="border">
+            <label for="">Border</label>
+        </li>
+
+        <li>
+            <input type="text" v-model="bgColor">
+            <label for="">Background Color</label>
+        </li>
+
+        <li>
+            <input type="range" v-model="range">
+            <label for="">Range</label>
+        </li>
+
+    </ul>
+
+</div>
+<script src="js/vue.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>    
